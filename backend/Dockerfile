@@ -11,7 +11,7 @@ FROM node:20-alpine AS production
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 # Security: remove unnecessary packages
-RUN apk --no-cache add dumb-init
+RUN apk add --no-cache curl=8.12.1-r0
 
 WORKDIR /app
 
