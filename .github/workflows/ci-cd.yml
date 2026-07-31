@@ -168,7 +168,7 @@ jobs:
   # ==============================================================
   # STAGE 5: IaC Security Scan (Checkov) — Terraform + K8s
   # ==============================================================
-    iac-scan:
+  iac-scan:
     name: "🏗️ IaC Security Scan"
     runs-on: ubuntu-latest
     needs: lint
