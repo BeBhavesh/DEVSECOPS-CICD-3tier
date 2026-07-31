@@ -74,7 +74,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: ${{ matrix.component }}
-        run: npm ci
+        run: npm install
 
       # npm audit for known vulnerabilities (fail on high/critical)
       - name: npm audit
